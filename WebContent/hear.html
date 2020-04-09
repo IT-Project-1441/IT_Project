@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
 <title>حاسة السمع</title>
@@ -23,11 +23,11 @@ td:hover {background-color: #b3b3b3;}
 
 
 <nav id="N">
-<a href="see1.html"><img alt="البصر" src="See.png"  width="100%"><br>البصر </a>
-  <a href="test.html"><img alt="التذوق" src="T.png"  width="100%"><br>التذوق</a>
-  <a href="Touch.html"><img alt="اللمس" src="Touch.png"  width="100%"><br>اللمس</a>
-  <a href="smell.html"><img alt="الشم" src="Smell.png"  width="100%"><br>الشم</a>
-  <a href="hear.html"><img alt="السمع" src="Hear.png"  width="100%"><br>السمع</a>
+  <a href="see1.html"><img alt="البصر" src="See.png"><br>البصر </a>
+  <a href="test.html"><img alt="التذوق" src="T.png" ><br>التذوق</a>
+  <a href="Touch.html"><img alt="اللمس" src="Touch.png" ><br>اللمس</a>
+  <a href="smell.html"><img alt="الشم" src="Smell.png" ><br>الشم</a>
+  <a href="hear.html"><img alt="السمع" src="Hear.png" ><br>السمع</a>
   <a href="home.html" class="right">الصفحة الرئيسية</a>
 </nav>
 
@@ -113,7 +113,7 @@ td:hover {background-color: #b3b3b3;}
 </section>
 
 <h3 style="font-size: 40px">اختبر حاسة سمعك الآن وسنقدر مرحلتك العمرية</h3>
-<input type="button" value="افتح الإختبار" class="button" onclick=window.location.href="HearForm.html">
+<input type="button" value="افتح الإختبار" class="button" onclick="a()">
 </article>
 </div>
 <!--------------Java script (كود الشريط الرئيسي)---------------->
@@ -129,6 +129,10 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+function a(){
+	location.href="HearForm.html";
+	
 }
 </script>
 

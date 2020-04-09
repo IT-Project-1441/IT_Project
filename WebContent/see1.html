@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
 <title>حاسة البصر</title>
@@ -19,11 +19,11 @@ video{max-width:60%; }
 
 
 <nav id="N">
-<a href="see1.html"><img alt="البصر" src="See.png"  width="100%"><br>البصر </a>
-  <a href="test.html"><img alt="التذوق" src="T.png"  width="100%"><br>التذوق</a>
-  <a href="Touch.html"><img alt="اللمس" src="Touch.png"  width="100%"><br>اللمس</a>
-  <a href="smell.html"><img alt="الشم" src="Smell.png"  width="100%"><br>الشم</a>
-  <a href="hear.html"><img alt="السمع" src="Hear.png"  width="100%"><br>السمع</a>
+  <a href="see1.html"><img alt="البصر" src="See.png"><br>البصر </a>
+  <a href="test.html"><img alt="التذوق" src="T.png" ><br>التذوق</a>
+  <a href="Touch.html"><img alt="اللمس" src="Touch.png" ><br>اللمس</a>
+  <a href="smell.html"><img alt="الشم" src="Smell.png" ><br>الشم</a>
+  <a href="hear.html"><img alt="السمع" src="Hear.png" ><br>السمع</a>
   <a href="home.html" class="right">الصفحة الرئيسية</a>
 </nav>
 
@@ -89,11 +89,11 @@ video{max-width:60%; }
 </section>
 
 <p class="Pic"> انقر على الصورة لتتعرف على تركيب حاسة العين :</p>
-<img src="صورة العين.jpg" align="right" width="145" height="126" alt="تركيب العين" usemap="#تركيب العين">
-<map id="تركيب العين" name="تركيب العين">
-<area shape="square" coords="0,0,145,126" alt="تركيب العين" target="_blank" href="تركيب العين.jfif">
+<img src="Eye.jpg" width="145" height="126" alt="تركيب العين" usemap="#تركيب_العين">
+<map id="تركيب_العين" name="تركيب_العين">
+<area shape="rect" coords="0,0,145,126" alt="تركيب العين" target="_blank" href="EyeCom.jfif">
 </map>
-<br><br><br><br><br><br><br><br>
+<br><br><br>
 
 <section>
 <h3>عظمة حاسة البصر</h3>
@@ -174,9 +174,9 @@ video{max-width:60%; }
 <video src="EyeTest.mp4" controls="controls">متصفحك لا يدعم تشغيل هذا الفيديو</video>
 
 <h3 style="font-size: 40px">اختبار عمى الألوان </h3>
-<input type="button" value="افتح الإختبار" class="button" onclick=window.location.href="SeeForm.html">
+<input type="button" value="افتح الإختبار" class="button" onclick="a()">
 </article>
-
+</div>
 <!--------------Java script (كود الشريط الرئيسي)---------------->
 <script>
 window.onscroll = function() {myFunction()};
@@ -190,6 +190,10 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+function a(){
+	location.href="SeeForm.html";
+	
 }
 </script>
 

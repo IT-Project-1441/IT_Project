@@ -1,21 +1,19 @@
+
 <!DOCTYPE html>
-<html lang="ar">
+<html>
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
-<title>من نحن</title>
+<title>التواصل</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">
 body{
   direction: rtl;
   }
-  p{
-  font-size:30px;
-  color:rgb(235,183,179);
-  text-align:center;
-  font-weight:bold;
+  legend,label{
+  color:white;
   }
-  @media only screen and (max-width: 600px){#Name{font-size:25px;}}
+  
 </style>
 </head>
 
@@ -41,19 +39,21 @@ body{
 
 
 <article class="Right"><!-- المحتوى اللي عاليمين -->
-
-<p>
-نحن طالبات قسم نظم المعلومات المستوى السادس، تم انشاء هذا الموقع كمتطلب لمادة تقنيات الإنترنت، يهدف الموقع لتزويد زواره بمعلومات عن الحواس الخمسة، 
-وتم استيحاء الفكرة من التأمل في نعم الله ولأن هذه النعم قد لا يدركها من ينعم بها، لذا اخترنا هذا الموضوع آملين استشعار زوار الموقع بعظم هذه النعم وشكر الله عليها.
- </p>
-<p id="Name">
-تم انشاؤه من قبل:<br>
-<br>أسماء عبدالرحمن عظيم الدين
-<br>خلود خالد العميري
-<br>فاطمه محمد بايونس
-</p>
-
-
+<form autocomplete="oN">
+<fieldset>
+<legend>تواصل معنا</legend><br/>
+<label>الأسم الأول:</label><br/>
+<input type="text" name="name" placeholder="خالد" required><br/><br/>
+<label>اسم العائلة:</label><br/>
+<input type="text" name="name2" placeholder="الغامدي" required><br>
+<label> البريد الالكتروني:</label><br/>
+<input type="email" name="Email" placeholder="Ahmd2220@gmail.com" required><br/><br/>
+<label>اترك لنا تعليق:</label><br/>
+<textarea rows="4" cols="50" name="Comments" maxlength="50"> أدخل تلعيقك ...</textarea><br/><br/>
+ <input type="submit" value="ارسال">
+ <input type="Reset" value="اعادة تعيين" >
+</fieldset>
+</form>
 </article>
 </div>
 <!--------------Java script (كود الشريط الرئيسي)---------------->
