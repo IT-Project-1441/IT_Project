@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="indexp.css" type="text/css">
+<title>التواصل</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="">
+body{
+  direction: rtl;
+  }
+  legend,label{
+  color:white;
+  }
+  
+</style>
+</head>
+
+<body>
+<header>
+<h1 id="Header">حواسي الخمس</h1>
+
+</header>
+<!-- هنا الراوبط للصفحات -->
+
+
+<nav id="N">
+<a href="see1.html"><img alt="البصر" src="See.png"  width="100%"><br>البصر </a>
+  <a href="test.html"><img alt="التذوق" src="T.png"  width="100%"><br>التذوق</a>
+  <a href="Touch.html"><img alt="اللمس" src="Touch.png"  width="100%"><br>اللمس</a>
+  <a href="smell.html"><img alt="الشم" src="Smell.png"  width="100%"><br>الشم</a>
+  <a href="hear.html"><img alt="السمع" src="Hear.png"  width="100%"><br>السمع</a>
+</nav>
+
+<div class="Content">
+
+
+
+<article class="Right"><!-- المحتوى اللي عاليمين -->
+<form autocomplete="oN">
+<fieldset>
+<legend>تواصل معنا</legend><br/>
+<label>الأسم الأول:</label><br/>
+<input type="text" name="name" placeholder="خالد" required><br/><br/>
+<label>اسم العائلة:</label><br/>
+<input type="text" name="name2" placeholder="الغامدي" required><br>
+<label> البريد الالكتروني:</label><br/>
+<input type="emil" name="Emil" placeholder="Ahmd2220@gmail.com" required><br/><br/>
+<label>اترك لنا تعليق:</label><br/>
+<textarea rows="4" cols="50" name="Comments" maxlength="50"> أدخل تلعيقك ...</textarea><br/><br/>
+ <input type="submit" value="ارسال">
+ <input type="Reset"value="اعادة تعيين" >
+</fieldset>
+</form>
+</article>
+
+<!--------------Java script (كود الشريط الرئيسي)---------------->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("N");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

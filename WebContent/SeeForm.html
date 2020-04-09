@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="windows-1256">
+<link rel="stylesheet" href="HTML5-CSS-Reset.css" type="text/css">
+<link rel="stylesheet" href="Form.css" type="text/css">
+<title>اختبار عمى الألوان</title>
+<style type="text/css">
+body,form,fieldset{
+text-align: center;
+align: center;
+}
+fieldset{padding:20px; margin-left:10%; margin-right:10%;}
+</style>
+</head>
+<body>
+<header>اختبار عمى الألوان </header>
+<div class="content">
+<div class="intro">
+<h1>صمم هذا الإختبار لتحديد ما إذا كنت تعاني من عمى الألوان ام لا</h1>
+<h2>في الأسفل عدد من الصور، الرجاء كتابة ما تراه في الصورة في الخانة اسفل كل صورة </h2>
+<h3>(الإختبار ليس دقيقًا جدًا، لذا فإنه لايحدد اي نوع من عمى الألوان لديك)</h3>
+</div>
+<form>
+
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره الاولى لإختبار البصر" src="EyeTest/E1.jpg"><br>
+<input type="text" name="Q1" id="Q1" >
+</fieldset>
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره الثانيه  لإختبار البصر" src="EyeTest/E2.jpg"><br>
+<input type="text" name="Q2" id="Q2" >
+</fieldset>
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره الثالثة  لإختبار البصر" src="EyeTest/E3.jpg"><br>
+<input type="text" name="Q3" id="Q3" >
+</fieldset>
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره الرابعة لإختبار البصر" src="EyeTest/E4.jpg"><br>
+<input type="text" name="Q4" id="Q4" >
+</fieldset>
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره الخامسة لإختبار البصر" src="EyeTest/E5.jpg"><br>
+<input type="text" name="Q5" id="Q5" >
+</fieldset>
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره السادسة لإختبار البصر" src="EyeTest/E6.jpg"><br>
+<input type="text" name="Q6" id="Q6" >
+</fieldset>
+<fieldset><legend><label>ما الرقم الموجود في الصورة ؟<br></label></legend>
+<img alt="الصوره السابعة  لإختبار البصر" src="EyeTest/E7.jpg"><br>
+<input type="text" name="Q7" id="Q7" >
+</fieldset><br><br>
+
+<input type="button" value="النتيجة" class="button" onclick="my()">
+<input type="reset" value="أعد الإختبار" class="button">
+<p id="Result"></p>
+</form>
+</div>
+
+<script type="text/javascript">
+var x1,x2,x3,x4,x5,x6,x7,count;
+count=0;
+x1 = document.getElementById("Q1");
+x2 = document.getElementById("Q2");
+x3 = document.getElementById("Q3");
+x4 = document.getElementById("Q4");
+x5 = document.getElementById("Q5");
+x6 = document.getElementById("Q6");
+x7 = document.getElementById("Q7");
+function my(){
+  count=0;
+  if(x1.value==42){count++;}
+  if(x2.value==56){count++;}
+  if(x3.value==57){count++;}
+  if(x4.value==75){count++;}
+  if(x5.value==3){count++;}
+  if(x6.value==56){count++;}
+  if(x7.value==15){count++;}
+  document.getElementById("Result").innerHTML = "النتيجة "+count+" من 7.";
+}
+</script>
+</body>
+</html>

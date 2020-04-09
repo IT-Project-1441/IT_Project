@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="index1.css" type="text/css">
+<title>الرئيسية</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<header>
+<h1 id="Header">حواسي الخمس</h1>
+</header>
+
+
+<!-- هنا الراوبط للصفحات -->
+<nav id="N">
+  <a href="see1.html"><img alt="البصر" src="See.png"  width="100%"><br>البصر </a>
+  <a href="test.html"><img alt="التذوق" src="T.png"  width="100%"><br>التذوق</a>
+  <a href="Touch.html"><img alt="اللمس" src="Touch.png"  width="100%"><br>اللمس</a>
+  <a href="smell.html"><img alt="الشم" src="Smell.png"  width="100%"><br>الشم</a>
+  <a href="hear.html"><img alt="السمع" src="Hear.png"  width="100%"><br>السمع</a>
+  <a href="home.html" class="right">الصفحة الرئيسية</a>
+</nav>
+
+<div class="Content">
+
+<article class="Right"><!-- المحتوى اللي عاليمين -->
+
+أنعم الله تعالى علينا بالحواس فهي نوافذ طبيعية وضرورية للتعلم والإدراك والبيان والتواصل مع العالم الخارجي، 
+فأتقن صنعها وعملها:<p class="ayah"> “لَقَدْ خَلَقْنَا الْإِنسَانَ فِي أَحْسَنِ تَقْوِيم” (التين:4). </p>
+وجعلها إعانة للناس على إدراك الغاية من وجودهم علي هذه الأرض: 
+<p class="ayah">“وَمَا خَلَقْتُ الْجِنَّ وَالْإِنسَ إِلَّا لِيَعْبُدُونِ”(الذاريات:56).</p>
+
+
+ فما هي هذه الحواس؟، وكيف تعمل؟، وما الأمراض المرتبطه بها وكيفية الوقاية منها وعلاجها؟
+<br><br>
+</article>
+
+<aside class="Left"><!-- المحتوى اللي عاليسار -->
+ <h2>للتعرف على المزيد من المعلومات انقر احد الروابط التالية: </h2>
+ 
+ <img src="more1.png" width="320" height="160" alt="هل هنالك اكثر من خمس حواس؟" usemap="#LINK1">
+
+<map name="LINK1">
+  <area shape="rect" coords="0,0,320,100" alt="Arabic" target="_blank" href="https://www.sayidaty.net/node/999846/%D8%A3%D8%B3
+  %D8%B1%D8%A9-%D9%88%D9%85%D8%AC%D8%AA%D9%85%D8%B9/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88%D8%B9%D9%84%D9%88%D9%85/%D8%B9%D8%AF%D8%AF
+  -%D8%AD%D9%88%D8%A7%D8%B3-%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86-%D8%A7%D9%84%D8%AD%D9%82%D9%8A%D9%82%D9%8A%D8%A9#photo/1">
+  <area shape="rect" coords="0,0,320,160" alt="English" target="_blank" href="https://www.weforum.org/agenda/2017/01/humans-have-more-than-5-senses/">
+  </map>
+ 
+<a href="https://mawdoo3.com/%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D8%A9_%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9" target="_blank">
+<img src="more2.png" alt="ماهي الحاسة السادسة؟"  width="320" height="160"></a>
+ 
+ <a href="https://www.sayidaty.net/node/521971/%D8%A3%D8%B3%D8%B1%D8%A9-%D9%88%D9%85%D8%AC%D8%AA%D9%85%D8%B9/%D8%AA%D8
+ %AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%A7%D8%B9%D8%A9/%D8%AD%D9%82%D8%A7%D8%A6%D9%82-%D9%85%D9%81%D8
+ %A7%D8%AC%D8%A6%D8%A9-%D8%B9%D9%86-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B3-%D9%85%D8%A7-%D9%87%D9%8A%D8%9F#photo/1" target="_blank">
+<img src="more3.png" alt="حقائق مفاجئة عن الحواس"  width="320" height="160"></a>
+</aside>
+</div>
+
+<footer>
+<a href="AboutUS.html"> من نحن </a>
+<a href="concat us.html">تواصل معنا</a>
+
+</footer>
+<!--------------Java script (كود الشريط الرئيسي)---------------->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("N");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

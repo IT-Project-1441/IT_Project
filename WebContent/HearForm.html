@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="HTML5-CSS-Reset.css" type="text/css">
+<link rel="stylesheet" href="Form.css" type="text/css">
+<title>اختبار السمع</title>
+</head>
+
+<body>
+
+<header>اختبار لحاسة السمع</header>
+<div class="content">
+<div class="intro">
+<h1>هل نستطيع تقدير عمرك من حاسة السمع لديك؟ هذا ما ستكتشفه من خلال هذا الإختبار</h1>
+<h2>الآن سوف تستمع لعدة اصوات، الرجاء الضغط على نعم عند سماع احدها</h2>
+<h3>للحصول على نتائج افضل الرجاء الذهاب الى مكان منعزل وارتداء سماعة الرأس</h3>
+</div>
+<form>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<fieldset><legend><label>هل تستطيع سماع هذا الصوت؟<br></label></legend>
+<audio controls="controls" class="audio">
+<source src="V1.mp3" type="audio/mpeg">
+<source src="V1.wav" type="audio/wav">
+</audio>
+<div class="container">
+<div class="radio">
+<input type="radio" name="Q1" id="Q11"  value="Yes">
+<label class="radio-label" for="Q11"> نعم </label><br>
+</div>
+<div class="radio">
+<input type="radio" name="Q1" id="Q12"  value="No">
+<label class="radio-label" for="Q12"> لا </label><br>
+</div>
+</div>
+</fieldset> 
+ <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<fieldset><legend><label>هل تستطيع سماع هذا الصوت؟<br></label></legend>
+<audio controls="controls" class="audio">
+<source src="V2.mp3" type="audio/mpeg">
+<source src="V2.wav" type="audio/wav">
+</audio>
+<div class="container">
+<div class="radio">
+<input type="radio" name="Q2" id="Q21"  value="Yes">
+<label class="radio-label" for="Q21"> نعم </label><br>
+</div>
+<div class="radio">
+<input type="radio" name="Q2" id="Q22"  value="No">
+<label class="radio-label" for="Q22"> لا </label><br>
+</div>
+</div>
+</fieldset> 
+ <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<fieldset><legend><label>هل تستطيع سماع هذا الصوت؟<br></label></legend>
+<audio controls="controls" class="audio">
+<source src="V3.mp3" type="audio/mpeg">
+<source src="V3.wav" type="audio/wav">
+</audio>
+<div class="container">
+<div class="radio">
+<input type="radio" name="Q3" id="Q31"  value="Yes">
+<label class="radio-label" for="Q31"> نعم </label><br>
+</div>
+<div class="radio">
+<input type="radio" name="Q3" id="Q32"  value="No">
+<label class="radio-label" for="Q32"> لا </label><br>
+</div>
+</div>
+</fieldset> 
+ <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <input type="button" value="النتيجة" class="button" onclick="myFunction()">
+<input type="reset" value="أعد الإختبار" class="button">
+
+<p id="R">النتيجة:</p>
+<p id="Result"></p>
+
+
+</form>
+
+
+</div>
+<!-- لازم الكل يسمع الصوت الأول، اذا سمع الصوت الثاني هو اصغر من 50 ،اذا سمع الصوت الثالث هو اصغر من 20 -->
+<script type="text/javascript">
+var x,x2,x3,text;
+x1 = document.getElementById("Q11");
+x2 = document.getElementById("Q21");
+x3 = document.getElementById("Q31");
+
+
+function myFunction() {
+	if (x3.checked==true){
+	text= "يقدر عمرك بأقل من 20 سنه";
+	}else if (x2.checked==true){ 
+		text= "يقدر عمرك بأقل من 50 سنه";} 
+	else{
+		text = "جميع الأشخاص يجب ان يكونوا قادرين على سماع الصوت الأول، إذا كان عمرك اقل من 50 سنة يجب عليك زيارة الطبيب";
+	}
+	document.getElementById("Result").innerHTML = text;
+	}
+</script>
+</body>
+</html>
