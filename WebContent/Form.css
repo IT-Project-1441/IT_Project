@@ -82,7 +82,7 @@ text-align: right;
   padding:10px;
   padding-right:30px;
   margin: 40px;
-  background: rgb(232, 214, 209,0.7);;
+  background: rgb(232, 214, 209,0.7);
   }
 
   audio,img{ padding: 20px 0px 10px 0px;	}
@@ -90,7 +90,7 @@ text-align: right;
   .button {
    width: 25%;
   border-radius: 12px;
-  background-color: rgb(118, 113, 113,0.93); /* Green */
+  background-color: rgb(118, 113, 113,0.93); 
   color: white;
   padding: 10px 5px 10px 5px;
   text-align: center;
@@ -99,6 +99,8 @@ text-align: right;
   font-size: large;
   font-weight:bold;
 }
+.button:hover { background: rgb(232, 214, 209,0.6);}
+
 #R ,#Result{
 	
 	padding: 10px 5px 10px 5px;

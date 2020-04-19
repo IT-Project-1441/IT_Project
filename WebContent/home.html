@@ -3,11 +3,14 @@
 <html lang="ar">
 <head>
 <link rel="stylesheet" href="index1.css" type="text/css">
+<script src="Script.js"></script>
 <title>الرئيسية</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
+
 <body>
 <header>
 <h1 id="Header">حواسي الخمس</h1>
@@ -61,20 +64,10 @@
 <a href="ContactUs.html">تواصل معنا</a>
 
 </footer>
-<!--------------Java script (كود الشريط الرئيسي)---------------->
-<script>
-window.onscroll = function() {myFunction()};
 
+<script>
 var navbar = document.getElementById("N");
 var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 </script>
 
 </body>

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
+<script src="Script.js"></script>
 <title>حاسة اللمس</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
 
+<style type="text/css">
 .list { color:lightblue; }
 </style>
+
 </head>
+
+
 <body>
 <header>
 <h1 id="Header">حواسي الخمس</h1>
-
 </header>
+
 <!-- هنا الراوبط للصفحات -->
-
-
 <nav id="N">
   <a href="see1.html"><img alt="البصر" src="See.png"><br>البصر </a>
   <a href="test.html"><img alt="التذوق" src="T.png" ><br>التذوق</a>
@@ -30,7 +32,8 @@
 <div class="Content">
 
 <article class="Right"><!-- المحتوى اللي عاليمين -->
-<h1>حاسة اللمس</h1>
+<h1 onmouseover="play()">حاسة اللمس</h1>
+<audio id="audio" src="Title/T3.mp3" controls="controls"></audio>
 
 <section>
 <h3> المحتويات </h3>
@@ -139,22 +142,12 @@ Meissners Corpuscles
 </section>
 </article>
 </div>
-<!--------------Java script (كود الشريط الرئيسي)---------------->
-<script>
-window.onscroll = function() {myFunction()};
 
+
+<script>
 var navbar = document.getElementById("N");
 var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 </script>
-
 
 </body>
 </html>

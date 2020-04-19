@@ -2,22 +2,25 @@
 <html lang="ar">
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
+<script src="Script.js"></script> 
 <title>حاسة البصر</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style type="text/css">
 video{max-width:60%; }
+pre{font-size:20px; padding-right:25%;}
 </style>
+
 </head>
+
 
 <body>
 <header>
 <h1 id="Header">حواسي الخمس</h1>
-
 </header>
+
 <!-- هنا الراوبط للصفحات -->
-
-
 <nav id="N">
   <a href="see1.html"><img alt="البصر" src="See.png"><br>البصر </a>
   <a href="test.html"><img alt="التذوق" src="T.png" ><br>التذوق</a>
@@ -30,7 +33,8 @@ video{max-width:60%; }
 <div class="Content">
 
 <article class="Right"><!-- المحتوى اللي عاليمين -->
-<h1>حاسة البصر</h1>
+<h1 onmouseover="play()">حاسة البصر</h1>
+<audio id="audio" src="Title/T1.mp3" controls="controls"></audio>
 
 <section>
 <h3>المحتويات</h3>
@@ -105,7 +109,7 @@ video{max-width:60%; }
 عمران:191] وقال تعالى: {أَوَلَمْ يَرَوْا أَنَّا نَسُوقُ الْمَاءَ إِلَى الْأَرْضِ الْجُرُزِ فَنُخْرِجُ بِهِ زَرْعاً تَأْكُلُ مِنْهُ أَنْعَامُهُمْ وَأَنْفُسُهُمْ أَفَلا 
 يُبْصِرُونَ} [السجدة:27].
 </section>
-<pre>
+<pre >
 إذا المرء لم يلبس ثيابًا من التقى *** تقلب عريانًا وإن كان كاسيًا 
 وخير لباس المرء طاعة ربه *** ولا خير فيمن كان لله عاصيًا
 </pre>
@@ -170,31 +174,17 @@ video{max-width:60%; }
 </ul>
 </section>
 <br>
-<h3 style="font-size: 20px">يعترف الناس بمشاكل عيونهم وحاجتهم لنظارات طبية أسهل من إعترافهم بمشاكلهم السمعية وحاجتهم إلى علاج، مع أن الهرم وتقدم السن يؤثر على كلتا الحاستين ... وهذا الفيديو يوضح ذلك!</h3>
+<h3 style="font-size: 25px">يعترف الناس بمشاكل عيونهم وحاجتهم لنظارات طبية أسهل من إعترافهم بمشاكلهم السمعية وحاجتهم إلى علاج، مع أن الهرم وتقدم السن يؤثر على كلتا الحاستين ... وهذا الفيديو يوضح ذلك!</h3>
 <video src="EyeTest.mp4" controls="controls">متصفحك لا يدعم تشغيل هذا الفيديو</video>
 
 <h3 style="font-size: 40px">اختبار عمى الألوان </h3>
-<input type="button" value="افتح الإختبار" class="button" onclick="a()">
+<input type="button" value="افتح الإختبار" class="button" onclick="a('SeeForm.html')">
 </article>
 </div>
-<!--------------Java script (كود الشريط الرئيسي)---------------->
-<script>
-window.onscroll = function() {myFunction()};
 
+<script>
 var navbar = document.getElementById("N");
 var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-function a(){
-	location.href="SeeForm.html";
-	
-}
 </script>
 
 </body>

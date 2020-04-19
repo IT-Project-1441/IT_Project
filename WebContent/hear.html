@@ -2,6 +2,7 @@
 <html lang="ar">
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
+<script src="Script.js"></script> 
 <title>حاسة السمع</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,12 +13,13 @@ tr,td{padding: 15px;
 td:hover {background-color: #b3b3b3;}
 
 </style>
+
 </head>
+
 
 <body>
 <header>
 <h1 id="Header">حواسي الخمس</h1>
-
 </header>
 <!-- هنا الراوبط للصفحات -->
 
@@ -34,7 +36,8 @@ td:hover {background-color: #b3b3b3;}
 <div class="Content">
 
 <article class="Right"><!-- المحتوى اللي عاليمين -->
-<h1>حاسة السمع</h1>
+<h1 onmouseover="play()">حاسة السمع</h1>
+<audio id="audio" src="Title/T5.mp3" controls="controls"></audio>
 
 <section>
 <h3> المحتويات  </h3>
@@ -112,27 +115,15 @@ td:hover {background-color: #b3b3b3;}
 </section>
 
 <h3 style="font-size: 40px">اختبر حاسة سمعك الآن وسنقدر مرحلتك العمرية</h3>
-<input type="button" value="افتح الإختبار" class="button" onclick="a()">
+<input type="button" value="افتح الإختبار" class="button" onclick="a('HearForm.html')">
 </article>
 </div>
 <!--------------Java script (كود الشريط الرئيسي)---------------->
 <script>
-window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("N");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-function a(){
-	location.href="HearForm.html";
-	
-}
 </script>
 
 </body>

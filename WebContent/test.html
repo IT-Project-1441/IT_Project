@@ -2,22 +2,24 @@
 <html lang="ar">
 <head>
 <link rel="stylesheet" href="indexp.css" type="text/css">
-<title >حاسة التذوق</title>
+<script src="Script.js"></script>
+<title>حاسة التذوق</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
 
+<style type="text/css">
 .list { color:lightblue; }
 </style>
+
 </head>
+
+
 <body>
 <header>
 <h1 id="Header">حواسي الخمس</h1>
-
 </header>
+
 <!-- هنا الراوبط للصفحات -->
-
-
 <nav id="N">
   <a href="see1.html"><img alt="البصر" src="See.png"><br>البصر </a>
   <a href="test.html"><img alt="التذوق" src="T.png" ><br>التذوق</a>
@@ -30,7 +32,9 @@
 <div class="Content">
 
 <article class="Right"><!-- المحتوى اللي عاليمين -->
-<h1>حاسة التذوق</h1>
+<h1 onmouseover="play()">حاسة التذوق</h1>
+<audio id="audio" src="Title/T2.mp3" controls="controls"></audio>
+
 <section>
 <h3> المحتويات  </h3>
 <ul>
@@ -93,6 +97,7 @@
 <section>
 <img src="test.png" alt="اجزاء اللسان" height="150" width="150" />
 </section>
+
 <section>
 <h3>اضطرابات حاسة التذوق</h3>
 يعاني البعض من اضطراب حاسة التذوق، ما يفقدهم القدرة على الاستمتاع بطعم الأطعمة التي يتناولونها.
@@ -132,25 +137,12 @@ Hypogeusia""، في حين يعاني آخرون من عدم القدرة على
 </ul>
 </section>
 
-
-
-
 </article>
 </div>
-<!--------------Java script (كود الشريط الرئيسي)---------------->
-<script>
-window.onscroll = function() {myFunction()};
 
+<script>
 var navbar = document.getElementById("N");
 var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 </script>
 
 </body>
